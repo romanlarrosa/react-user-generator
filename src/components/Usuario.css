@@ -1,0 +1,12 @@
+.Usuario {
+  @apply bg-white shadow-lg rounded-lg overflow-hidden my-4;
+}
+
+.Usuario img {
+  @apply w-full h-56 object-cover object-center;
+}
+
+.Icono {
+  max-width: 20px;
+  max-height: 20px;
+}
