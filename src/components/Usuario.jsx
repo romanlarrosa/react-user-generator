@@ -10,7 +10,7 @@ const Usuario = (props) => {
     id = 0,
   } = props
   return (
-    <a href={`#${id}`} className="Usuario">
+    <div key={`#${id}`} className="Usuario">
       <img className=" w-44" src={avatar} alt={username}></img>
       <div className="py-4 px-6">
         <div className="flex flex-col sm:flex-row sm:justify-between">
@@ -23,7 +23,7 @@ const Usuario = (props) => {
           </p>
         </div>
       </div>
-    </a>
+    </div>
   )
 }
 

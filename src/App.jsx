@@ -25,7 +25,9 @@ function App() {
       </div>
       <section className="App-content">
         <Route path="/users/:numUsuarios" component={ListaUsuarios} />
-        {/* <ListaUsuarios numUsuarios="15" /> */}
+        <Route path="/">
+          <ListaUsuarios numUsuarios={15} />
+        </Route>
       </section>
     </div>
   )

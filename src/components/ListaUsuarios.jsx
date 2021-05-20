@@ -7,6 +7,10 @@ import getUsuarios from "../services/getUsuarios"
 const ListaUsuarios = (params) => {
   const [Usuarios, setUsuarios] = useState([])
 
+  if (typeof params.params === "undefined") {
+    params = { params: { numUsuarios: 1 } }
+  }
+
   const { numUsuarios } = params.params
   //numUsuarios = parseInt(numUsuarios)
 
