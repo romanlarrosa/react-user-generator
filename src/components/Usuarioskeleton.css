@@ -1,0 +1,7 @@
+.Usuarioskeleton {
+  @apply bg-gray-600 opacity-5 shadow-md rounded-lg overflow-hidden my-4 w-96 animate-pulse;
+}
+
+.Usuarioskeleton img {
+  @apply w-full h-56 object-cover object-center;
+}

@@ -1,27 +1,39 @@
 import React, { useState, useEffect } from "react"
 import Usuario from "./Usuario"
+import Usuarioskeleton from "./Usuarioskeleton"
 
 import getUsuarios from "../services/getUsuarios"
 
-const ListaUsuarios = ({ numUsuarios }) => {
+const ListaUsuarios = (params) => {
   const [Usuarios, setUsuarios] = useState([])
 
-  numUsuarios = parseInt(numUsuarios)
-  // = parseInt(numUsuarios)
+  const { numUsuarios } = params.params
+  //numUsuarios = parseInt(numUsuarios)
 
   useEffect(() => {
-    getUsuarios(numUsuarios).then((usuarios) => setUsuarios(usuarios))
+    setUsuarios([])
+    setTimeout(() => {
+      getUsuarios(numUsuarios).then((usuarios) => setUsuarios(usuarios))
+    }, 500)
   }, [numUsuarios])
 
-  return Usuarios.map(({ username, gender, email, avatar, id }) => (
-    <Usuario
-      key={id}
-      username={username}
-      gender={gender}
-      email={email}
-      avatar={avatar}
-    ></Usuario>
-  ))
+  let prueba = []
+  for (let index = 0; index < 15; index++) {
+    prueba = [...prueba, <Usuarioskeleton />]
+  }
+
+  return Usuarios.length === 0
+    ? prueba.map((item) => item)
+    : Usuarios.map(({ username, gender, email, avatar, id }) => (
+        <Usuario
+          key={id}
+          id={id}
+          username={username}
+          gender={gender}
+          email={email}
+          avatar={avatar}
+        ></Usuario>
+      ))
 }
 
 export default ListaUsuarios

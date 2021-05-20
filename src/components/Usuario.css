@@ -1,5 +1,7 @@
 .Usuario {
-  @apply bg-white shadow-lg rounded-lg overflow-hidden my-4;
+  @apply bg-gray-600 opacity-90 hover:opacity-100 shadow-md rounded-lg 
+  overflow-hidden my-4 w-96 transition duration-300 ease-in-out 
+  hover:shadow-2xl;
 }
 
 .Usuario img {

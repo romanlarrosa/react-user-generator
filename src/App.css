@@ -14,9 +14,23 @@
 } */
 
 .App-content {
-  @apply min-h-screen flex flex-wrap gap-8 items-center justify-center text-white bg-gray-300 p-8;
+  @apply min-h-screen flex flex-wrap gap-8 items-center justify-center py-16 px-10 xl:px-48;
 }
 
 .App {
   @apply text-center;
+}
+
+.App h1 {
+  @apply text-xl font-normal text-white mt-7;
+}
+
+.Pill {
+  @apply py-2 px-4 shadow-md no-underline rounded-full 
+       text-white font-sans font-semibold text-sm hover:text-white 
+       focus:outline-none mr-2
+       transition duration-300 ease-in-out 
+       hover:shadow-lg hover:opacity-80
+       bg-gray-600
+       sm:w-min;
 }
