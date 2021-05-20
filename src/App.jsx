@@ -6,6 +6,9 @@ function App() {
   return (
     <div className="App">
       <h1>Random users</h1>
+      <h2 className="text-white text-md">
+        Selecciona cuantas personas quieres
+      </h2>
       <div className="mt-2 flex justify-center">
         <Link className="Pill" to="/users/5">
           5
