@@ -1,35 +1,39 @@
-# Getting Started with Create React App
+# React user generator ⚛ 🙍🏻‍♂️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
+
+Es una web single-page en la que se muestran personas generadas automáticamente, gracias a la API de [Random User Generator](https://randomuser.me)
+
+Este proyecto es un primer acercamiento a React, por lo que puede que las prácticas no sean las mejores, aún me queda mucho por aprender y seguir mejorando
 
 ## Available Scripts
 
-In the project directory, you can run:
+Los scripts están un poco cambiados para que funcione Tailwindcss y poder hostear la web en heroku, por lo que son un poco distintos a los de cualquier proyecto con react:
 
-### `yarn start`
+### `npm run st`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Corre la app en modo desarrollo.\
+Abre [http://localhost:3000](http://localhost:3000) para visualizarla en el navegador.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+La página se regargará cada vez que se realice un cambio.\
+También estarán visibles los errores.
 
-### `yarn test`
+### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Lanza los test en modo interactivo.\
+Mira esta sección: [running tests](https://facebook.github.io/create-react-app/docs/running-tests) para más información.
 
-### `yarn build`
+### `npm build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Compila la app para producción en el directorio `build` .\
+Esto optimiza la app para entornos de producción.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+La compilación es minificada y los archivos incluyen los hashes.\
+La app está lista para producción!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Mira la sección sobre [deployment](https://facebook.github.io/create-react-app/docs/deployment) para más información.
 
-### `yarn eject`
+### `npm eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
