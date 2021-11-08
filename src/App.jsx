@@ -1,6 +1,7 @@
 import "./App.css"
 import { Route, Link } from "wouter"
 import ListaUsuarios from "./components/ListaUsuarios"
+import React from "react"
 
 function App() {
   return (
